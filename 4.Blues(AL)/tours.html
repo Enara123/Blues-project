@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Feel the brilliant blue touch your feet">
+		<meta name="keywords" content="Blue Ocean, Beach hotel, Relaxing vacation">
+		<meta name="author" content="Enara Koperahewa">
+		<title>Blues | Tours</title>
+		<link rel="stylesheet" href="./css/tours.css">
+	</head>
+	<body>
+		<div class="scroll">
+			<header>
+				<div class="container">
+					<div id="branding">
+						<!-- Blues is the home page, so link home on blues -->
+						<h1><a href="home.html" >Blues</a></h1>
+					</div>
+					<img src="./img/menu.svg" class="menu">
+					<nav>
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="tours.html" class="current">Tours</a></li>
+							<li><a href="contact us.html">Contact us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+        
+		
+			<main id="showcase_img">
+
+				<section id="tagline">
+					<h4>Get closer to nature</h4>
+					<p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor suspendisse metus dolor nunc fringilla tincidunt. Mauris sit turpis at praesent eu.</p>
+				</section>
+
+				<section id="boxes">
+					<div class="container">
+						
+						<div class="box">
+							<img src="./img/healing.png">
+							<div class="float">
+								<div class="margin">
+									<h4>Healing</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing aenean curabitur elit sed cras eget ultrices </p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="box_2">
+							<div class="float_2">
+								<div class="margin_2">
+									<h4>Seafood</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing aenean curabitur elit sed cras eget ultrices </p>
+								</div>
+							</div>
+							<img src="./img/seafood.png">
+						</div>
+						
+						<div class="box">
+							<img src="./img/relax.png">
+							<div class="float">
+								<div class="margin">
+									<h4>Relaxing</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing aenean curabitur elit sed cras eget ultrices </p>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+				</section>
+			</main>
+				<script>
+				
+					(function() {
+						var menu = document.querySelector('ul'),
+							menulink = document.querySelector('img');
+						
+						menulink.addEventListener('click', function(e) {
+							menu.classList.toggle('active');
+							e.preventDefault();
+						});
+					})();
+				
+				</script>
+
+			<footer>
+				<p>Blues, copyroght © 2020</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+body{
+	font-family:Merriweather,Italiana,sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/*Global*/
+.container{
+	width: 83%;
+	margin:auto;
+	overflow: hidden;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.current{
+    color:#52ECDE;
+}
+/*Header*/
+
+header{
+	background: #011F28;
+	min-height: 60px;
+	padding-top: 20px;
+	color: #fff;
+}
+
+header li a {
+	color:#fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+header li{
+	display: inline;
+	padding: 0 38px 0 38px;
+}
+
+header a:hover{
+  color:#52ECDE;
+  font-weight:bold;
+}
+  
+header #branding{
+	float: left;
+}
+
+header #branding h1{
+	margin: 0;
+	font-weight:normal; 
+	font-size: 28px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+header #branding h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+/* Main*/
+main{
+	padding: 1px;
+	background:url(../img/about.png) no-repeat 40%;
+}
+
+/*Tagline*/
+#tagline p{
+	margin-top: 200px;
+	margin-left: 165px;
+	font-family: italiana;
+	font-size: 45px;
+}
+
+/*About*/
+
+#about{
+	background: rgba(255, 255, 255, 0.77);
+	margin: 285px 105px 68px auto;
+	padding: 1px;
+	max-width: 782px;
+	border-radius: 10px;
+}
+
+#about h3{
+    margin: 0px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+	line-height: 40px;
+    padding-top: 60px;
+}
+
+.para{
+    margin: 20px auto;
+	font-size: 20px;
+	text-align: center;
+	max-width: 500px;
+}
+
+.para2{
+    margin: 20px auto 55px auto;
+    font-size: 20px;
+	text-align: center;
+	max-width: 512px;
+}
+
+/*Footer*/
+
+footer{
+	background: #011F28;
+	min-height: 60px;
+	padding-top: 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+}
+
+.menu{
+	display: none;
+	width:40px;
+	cursor:pointer;
+}
+
+@media(max-width:1000px){
+
+	#about{
+		margin: 285px auto 68px auto;
+	}
+	
+}
+
+@media(max-width:768px){
+	/*Header and Nav*/
+	.active{
+		position: absolute;
+		display: block;
+		background:#0E2C35;
+		width: 100%;
+		left: 0px;
+		top: 79px;
+	}
+
+	.menu{
+		display: block;
+		float:right;
+		padding: 10px;
+	}
+
+	header ul{
+		display: none;
+	}
+	header nav li a{
+		display: block;
+		text-align: center;
+		font-size: 20px;
+		padding: 20px;
+	}
+
+	#tagline p{
+		margin-left: auto;
+		text-align: center;
+	}
+	#about{
+		border-radius: 0px;
+	}
+
+}
+
+@media(max-width:512px){
+
+	#tagline p{
+		font-size: 40px;
+	}
+
+	#about p{
+		font-size: 18px;
+	}
+}

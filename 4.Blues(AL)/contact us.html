@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Feel the brilliant blue touch your feet">
+		<meta name="keywords" content="Blue Ocean, Beach hotel, Relaxing vacation">
+		<meta name="author" content="Enara Koperahewa">
+		<title>Blues | Welcome</title>
+		<link rel="stylesheet" href="./css/contact us.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><a href="home.html">Blues</a></h1>
+				</div>
+				<img src="./img/menu.svg" class="menu">
+				<nav>
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="tours.html">Tours</a></li>
+						<li><a href="contact us.html" class="current">Contact us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+		<main id="showcase_img">
+			<div class="container_1">
+				<section id="tagline">
+					<div class="tag_box">
+						<h4>Get in touch</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ultrices placerat semper tellus iaculis.</p>
+					</div>
+					
+					<div id="social_media">
+						<h5>Follow us</h5>
+						<div class="box">
+							<img class="icon" src="./img/Fb.png">
+							<img  class="icon" src="./img/Yt.png">
+							<img class="icon" src="./img/Insta.png">
+						</div>
+					</div>	
+				</section>
+
+				<aside id="form" >
+					<div class="background">
+						<form class="fill">
+							<div>
+								<label>First name</label><br>
+								<input type="text" placeholder="First name">
+							</div>
+							<div>
+								<label>Last name</label><br>
+								<input type="text" placeholder="Last name">
+							</div>
+							<div>
+								<label>Email</label><br>
+								<input type="email" placeholder="example@gmail.com">
+							</div>
+							<div>
+								<label>Message</label><br>
+								<textarea placeholder="Message"></textarea>
+							</div>
+							<button class="button_1" type="submit">Submit</button>
+						</form>
+					</div>
+				</aside>
+
+				
+			</div>
+		</main>
+
+		<script>
+	        
+			(function() {
+				var menu = document.querySelector('ul'),
+					menulink = document.querySelector('img');
+				
+				menulink.addEventListener('click', function(e) {
+					menu.classList.toggle('active');
+					e.preventDefault();
+				});
+			})();
+		
+		</script>
+
+		<footer>
+			<p>Blues, copyroght © 2020</p>
+		</footer>
+	</body>
+</html>
